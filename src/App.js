@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Header from './Components/Header';
-
+import Textbox from './Components/Text input box'
 class App extends Component {
 
 
@@ -11,6 +11,7 @@ class App extends Component {
     return (
       <div classname="container">
      <Header/>
+     <Textbox/>
      </div>
     );
   }
