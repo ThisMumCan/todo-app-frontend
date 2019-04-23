@@ -3,15 +3,10 @@ class Header extends Component {
 
     render() {
         return (
-            <h1 style={styles.header}> {this.props.headerText}</h1>
-        );
-    }
-}
-const styles = {
-    header: {
-        color: "Purple"
-
-    }
-};
-
+            <div>
+            <h1>Remember All</h1>
+            </div>  
+         ) }
+        }
+        
 export default Header;

@@ -8,19 +8,10 @@ class App extends Component {
 
   render() {
 
-    const headers = ["Todoapp", "One", "Two", "Three", "Four"];
-
-
-
     return (
-      <div className="container">
-        {
-          headers.map(function (header, index) {
-            return <Header headerText={header} Key={index} />;
-          })
-        }
-
-      </div>
+      <div classname="container">
+     <Header/>
+     </div>
     );
   }
 }
