@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Header from './Components/Header';
-import Textbox from './Components/Text input box'
+import Textbox from './Components/TextInputBox'
 class App extends Component {
 
 
