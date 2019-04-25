@@ -8,9 +8,65 @@ h1 {
     margin: 0;
     padding: 10px;
 }
-.textbox {
+
+
+.inputbox {
   height: 35px;
   width: 200px;
   font-size: 14pt;
   cursor: text;
+}
+.glyphicon.glyphicon-plus{
+  font-size: 14pt;
+}
+
+h2 {
+  font-family: 'UniqueRegular', Arial, sans-serif;
+  background-color: #FF7F50;
+  text-align: center;
+  padding: 10px;
+}
+
+
+#Image1 {
+  align-items: right;
+  width: 200px;
+  height: 100px;
+  background: #FF7F50;
+}
+
+
+
+h2 {
+  font-family: 'UniqueRegular', Arial, sans-serif;
+  background-color: #FF7F50;
+  
+  padding: 10px;
+}
+
+
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background-image: linear-gradient(#f9cf00 33.33%, #f9cf00 33.33%, #f9cf00 66.66%, #4484ce 66.66%);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  margin: 0px;
+  font-family: Helvetica, Arial, sans-serif;
+  padding: 10px;
+}
+
+
+
+.items{
+  background-color: #d9d9d9;
+  width: 1000px;
+  font-family: Helvetica, Arial, sans-serif;
+  padding: 10px;
+     
+}
+
+.icons{
+  text-align: right;
 }

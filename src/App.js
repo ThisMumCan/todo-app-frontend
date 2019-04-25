@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 import Header from './Components/Header';
-import Textbox from './Components/TextInputBox'
+import AddTask from './Components/AddItem';
+import ListedItems from './Components/ListedItems';
+import PageTitle from './Components/PageTitle';
 class App extends Component {
 
 
@@ -11,7 +12,9 @@ class App extends Component {
     return (
       <div classname="container">
      <Header/>
-     <Textbox/>
+     <PageTitle/>
+     <AddTask/>
+     <ListedItems/>
      </div>
     );
   }
