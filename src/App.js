@@ -4,6 +4,7 @@ import Header from './Components/Header';
 import AddTask from './Components/AddItem';
 import ListedItems from './Components/ListedItems';
 import PageTitle from './Components/PageTitle';
+import TotalItems from './Components/TotalItems';
 
 class App extends Component {
 
@@ -12,13 +13,39 @@ class App extends Component {
 
     return (
       <div classname="container">
-     <Header/>
-     <PageTitle/>
-     <AddTask/>
-     
-     <ListedItems/>
-     
-     </div>
+        <div classname="row">
+          <div classname="col-12">
+            <Header />
+          </div>
+        </div>
+
+        <div classname="row">
+          <div classname="col-12">
+            <PageTitle />
+          </div>
+        </div>
+        
+        <div classname="row">
+          <div classname="col-6">
+            <AddTask />
+          </div>
+        </div>
+
+        <div className="w-100"></div>
+        <div classname="row">
+          <div classname="col-6">
+            <TotalItems />
+          </div>
+        </div>
+
+        <div classname="row">
+          <div classname="col-12">
+          </div>
+          <ListedItems />
+        </div>
+
+      </div>
+
     );
   }
 }

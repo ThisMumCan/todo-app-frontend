@@ -37,14 +37,6 @@ h2 {
 
 
 
-h2 {
-  font-family: 'UniqueRegular', Arial, sans-serif;
-  background-color: #FF7F50;
-  
-  padding: 10px;
-}
-
-
 
 body {
   height: 100vh;
@@ -69,4 +61,8 @@ body {
 
 .icons{
   text-align: right;
+}
+
+.centred {
+ align-items: center;
 }
