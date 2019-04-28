@@ -4,6 +4,7 @@ import Header from './Components/Header';
 import AddTask from './Components/AddItem';
 import ListedItems from './Components/ListedItems';
 import PageTitle from './Components/PageTitle';
+
 class App extends Component {
 
 
@@ -14,7 +15,9 @@ class App extends Component {
      <Header/>
      <PageTitle/>
      <AddTask/>
+     
      <ListedItems/>
+     
      </div>
     );
   }
