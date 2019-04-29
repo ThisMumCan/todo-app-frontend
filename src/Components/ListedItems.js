@@ -23,7 +23,7 @@ class ListedItems extends Component {
             <div>
             <div className="row items centred">
             <div className="col item">
-                <p>Crisps</p>
+                <p>{this.props.itemDescription}</p>
             </div>
             <div class="col icons">
                 <span className="glyphicon glyphicon-thumbs-up" onClick={this.state.thumbsUpClicked}></span>
