@@ -8,7 +8,7 @@ import AddItem from './Components/AddItem';
 
 class App extends Component {
 
-  State = {
+  state = {
     items: []
   }
 

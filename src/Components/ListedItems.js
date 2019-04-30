@@ -1,6 +1,10 @@
 import React, { Component } from 'react';
 class ListedItems extends Component {
 
+    state = {
+        
+    }
+
     thumbsUpClicked = () => {
     alert("Thumbsup")
     }
