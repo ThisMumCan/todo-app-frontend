@@ -7,21 +7,21 @@ class ListedItems extends Component {
       } 
 
     thumbsUpClicked = () => {
-    alert("Thumbsup")
+    alert("Thumbsup removes item or crosses it out")
     }
 
     thumbsDownClicked = () => {
-    alert("ThumbsDown")
+    alert("ThumbsDown add item to new list")
     }
 
     editIconClicked = () => {
-    alert("Edit")
+    alert("Edit allows user change whats been added")
     }
 
     DeleteIconClicked = () => {
-    alert("delete")
+    alert("delete removes item")
     }
-
+// Could add an undo component
 
     render() {
         return (

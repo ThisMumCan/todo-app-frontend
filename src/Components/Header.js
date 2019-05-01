@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 // import goldfish from './Components/goldfish.jpg';
 class Header extends Component {
-
+// clicking on image and name takes you to homepage or refreshes page
     render() {
         return (
             <div classname="row align-items-start">
