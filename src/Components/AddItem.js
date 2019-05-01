@@ -27,7 +27,7 @@ class AddItem extends Component {
                             <input type="text" class="form-control" placeholder="Add item to the list" onChange={this.inputBoxChanged}></input>
                             <div class="input-group-btn">
                                 <button className="btn btn-default" type="submit">
-                                    <i className="glyphicon glyphicon-plus" onClick={this.state.addItemClicked}></i>
+                                    <i className="glyphicon glyphicon-plus" onSubmit={this.state.addItemClicked}></i>
                                 </button>
                             </div>
                         </form>
