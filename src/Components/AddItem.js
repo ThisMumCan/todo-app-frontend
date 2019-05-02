@@ -25,15 +25,12 @@ class AddItem extends Component {
                     <div className="col-5 inputbox">
                         <form>
                             <input type="text" classname="form-control" placeholder="Add item to the list" onChange={this.inputBoxChanged}></input>
-                            <div classname="input-group-btn">
+                            <div className="input-group-btn">
                                 <button className="btn btn-default" type="submit">
                                     <i className="glyphicon glyphicon-plus" onSubmit={this.state.addItemClicked}></i>
                                 </button>
                             </div>
                         </form>
-
-
-
                     </div>
                 </div>
             </div >
