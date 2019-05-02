@@ -28,7 +28,7 @@ class ListedItems extends Component {
             <div>
             <div className="row items centred">
             <div className="col item">
-                <p>{this.props.itemDescription}</p>
+                <p>{this.props.item.itemDescription}</p>
             </div>
             <div class="col icons">
                 <span className="glyphicon glyphicon-thumbs-up" onClick={this.state.thumbsUpClicked}></span>
@@ -42,7 +42,7 @@ class ListedItems extends Component {
 
             <div className="w-100"></div>
 
-            <div className="col item">
+            {/* <div className="col item">
                 <p>Cakes </p>
             </div>
             <div className="col icons">
@@ -55,9 +55,9 @@ class ListedItems extends Component {
                 <span className="glyphicon glyphicon-trash"></span>
             </div>
 
-            <div className="w-100"></div>
+            <div className="w-100"></div> */}
 
-            <div className="col item">
+            {/* <div className="col item">
                 <p>Biscuits</p>
             </div>
             <div className="col icons">
@@ -68,7 +68,7 @@ class ListedItems extends Component {
                 <span className="glyphicon glyphicon-pencil"></span>
                 &nbsp; &nbsp;
                 <span className="glyphicon glyphicon-trash"></span>
-            </div>
+            </div> */}
             </div> 
             </div> 
          ) }

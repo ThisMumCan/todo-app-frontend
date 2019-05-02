@@ -6,6 +6,7 @@ class AddItem extends Component {
     }
 
     inputBoxChanged = (event) => {
+        console.log(event.target.value);
         this.setState(
             {
                 itemDescription: event.target.value
@@ -14,8 +15,9 @@ class AddItem extends Component {
     }
 
 
-    addItemClicked = () => {
-        this.props.addItemFunction(this.state.itemDescription);
+    addItemClicked = (e) => {
+        e.preventDefault();
+        this.props.addItem(this.state.itemDescription);
     }
 
     render() {
@@ -24,10 +26,10 @@ class AddItem extends Component {
                 <div className="row align-items-center">
                     <div className="col-5 inputbox">
                         <form>
-                            <input type="text" classname="form-control" placeholder="Add item to the list" onChange={this.inputBoxChanged}></input>
+                            <input type="text" className="form-control" placeholder="Add item to the list" onChange={this.inputBoxChanged}></input>
                             <div className="input-group-btn">
                                 <button className="btn btn-default" type="submit">
-                                    <i className="glyphicon glyphicon-plus" onSubmit={this.state.addItemClicked}></i>
+                                    <i className="glyphicon glyphicon-plus" onSubmit={this.addItemClicked}></i>
                                 </button>
                             </div>
                         </form>

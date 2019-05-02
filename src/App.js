@@ -5,11 +5,16 @@ import ListedItems from './Components/ListedItems';
 import PageTitle from './Components/PageTitle';
 import TotalItems from './Components/TotalItems';
 import AddItem from './Components/AddItem';
+import uuidv1 from 'uuid/v1';
 
 class App extends Component {
 
   state = {
-    items: []
+    items: [
+      { itemDescription: 'cakes' },
+      { itemDescription: 'crisps' },
+      { itemDescription: 'Biscuits' }
+    ]
   }
 
   addItem = (itemDescription) => {
@@ -26,33 +31,33 @@ class App extends Component {
 
 
     return (
-      <div classname="container">
-        <div classname="row">
-          <div classname="col-12">
+      <div className="container">
+        <div className="row">
+          <div className="col-12">
             <Header />
           </div>
         </div>
 
-        <div classname="row">
-          <div classname="col-12">
+        <div className="row">
+          <div className="col-12">
             <PageTitle />
           </div>
         </div>
 
-        <div classname="row">
-          <div classname="col-6">
-            <AddItem addItemFunction={this.addItem} />
-            {
+        <div className="row">
+          <div className="col-6">
+            <AddItem addItem={this.addItem} />
+            {/* {
               this.state.items.map(function (item, index) {
                 return <AddItem itemDescription={item} key={index} />
               })
-            }
+            } */}
           </div>
         </div>
 
         <div className="w-100"></div>
-        <div classname="row">
-          <div classname="col-6">
+        <div className="row">
+          <div className="col-6">
             <TotalItems itemCount={this.state.items.length} />
           </div>
         </div>
@@ -60,7 +65,7 @@ class App extends Component {
         <div classname="row">
           <div classname="col-12">
           </div>
-          <ListedItems />
+          {this.state.items.map((item, index) => { return <ListedItems item={item} /> })}
         </div>
 
 
