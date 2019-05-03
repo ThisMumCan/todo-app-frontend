@@ -26,10 +26,10 @@ class AddItem extends Component {
                 <div className="row align-items-center">
                     <div className="col-5 inputbox">
                         <form>
-                            <input type="text" className="form-control" placeholder="Add item to the list" onChange={this.inputBoxChanged}></input>
+                            <input type="text" className="form-control" placeholder="Add an item to the list" onChange={this.inputBoxChanged}></input>
                             <div className="input-group-btn">
                                 <button className="btn btn-default" type="submit">
-                                    <i className="glyphicon glyphicon-plus" onSubmit={this.addItemClicked}></i>
+                                    <i className="glyphicon glyphicon-plus" onClick={this.addItemClicked}></i>
                                 </button>
                             </div>
                         </form>
