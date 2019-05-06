@@ -11,8 +11,8 @@ class App extends Component {
 
   state = {
     items: [
-      { itemDescription: 'cakes' },
-      { itemDescription: 'crisps' },
+      { itemDescription: 'Cakes' },
+      { itemDescription: 'Crisps' },
       { itemDescription: 'Biscuits' }
     ]
   }

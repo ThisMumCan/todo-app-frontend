@@ -34,7 +34,7 @@ class ListedItems extends Component {
                 <span className="glyphicon glyphicon-trash" onClick={this.state.DeleteIconClicked}></span>
                     </div>
 
-                    <div className="w-100"></div>;
+                    <div className="w-100"></div>
         
             </div>
             </div>

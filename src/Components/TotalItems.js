@@ -5,7 +5,7 @@ class TotalItems extends Component {
         return (
             <div>
                 <div className="col-6">
-                    <h2>Things to Buy:<span className="badge">{this.props.itemCount}</span></h2>
+                    <h2>Things to Buy:{this.props.itemCount}</h2>
                 </div>
             </div>
         )
