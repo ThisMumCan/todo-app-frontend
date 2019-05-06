@@ -3,12 +3,17 @@ class ListedItems extends Component {
 
     constructor(props) {
         super(props)
-        this.state = { clicked: false }
+        this.state = { clicked: false };
     }
 
-    thumbsUpClicked = () => {
+    
+
+    thumbsUpClicked = (e) => {
+        e.preventDefault();
         alert("Thumbsup removes item or crosses it out")
+        this.setState.thumbsUpClicked({iconColor: "Green"})
     }
+    
 
     editIconClicked = () => {
         alert("Edit allows user change whats been added")
