@@ -14,10 +14,9 @@ class AddItem extends Component {
         );
     }
 
-
-    addItemClicked = (e) => {
+addItemClicked = (e) => {
         e.preventDefault();
-        this.props.addItem(this.state.itemDescription);
+        this.props.addItem(this.state);
     }
 
     render() {
