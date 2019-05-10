@@ -27,6 +27,23 @@ class App extends Component {
     })
   }
 
+  deleteItem = (indexdelete)  => {
+    let currentItems = this.state.items;
+    const filteredArray = 
+  currentItems.filter((item, index) => { 
+   if (index === indexdelete ) { 
+     return false 
+   } else {
+     return true
+   }
+  });
+  this.setState({
+    items:filteredArray
+  })
+  
+  }
+
+
   render() {
 
 
@@ -65,7 +82,7 @@ class App extends Component {
         <div classname="row">
           <div classname="col-12">
           </div>
-          {this.state.items.map((item, index) => { return <ListedItems item={item} /> })}
+          {this.state.items.map((item, index) => { return <ListedItems item={item} index={index} deleteItem={this.deleteItem}/> })}
         </div>
 
 

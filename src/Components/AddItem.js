@@ -27,7 +27,7 @@ addItemClicked = (e) => {
                         <form>
                             <input type="text" className="form-control" placeholder="Add an item to the list" onChange={this.inputBoxChanged}></input>
                             <div className="input-group-btn">
-                                <button className="btn btn-default" type="submit">
+                                <button className="submitButton" type="submit">
                                     <i className="glyphicon glyphicon-plus" onClick={this.addItemClicked}></i>
                                 </button>
                             </div>
